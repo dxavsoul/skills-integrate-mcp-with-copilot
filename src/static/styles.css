@@ -13,6 +13,59 @@ body {
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
+  position: relative;
+}
+
+#user-menu-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+#user-menu-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 20px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  color: #1a237e;
+}
+
+#user-menu {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 280px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.14);
+  padding: 12px;
+}
+
+#user-menu form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#user-menu label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#user-menu input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#teacher-name {
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 header {
@@ -128,6 +181,19 @@ section h3 {
 .participants-section p {
   color: #777;
   font-style: italic;
+}
+
+.info-note {
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  color: #0c5460;
+  background-color: #d1ecf1;
+}
+
+.form-disabled {
+  opacity: 0.65;
 }
 
 .form-group {
